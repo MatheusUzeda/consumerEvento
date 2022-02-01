@@ -28,8 +28,8 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.libdynaccurate</groupId>
-			<artifactId>libdynaccurate</artifactId>
+			<groupId>com.libdynaccuratedesafio</groupId>
+			<artifactId>libdynaccurate-desafio</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
