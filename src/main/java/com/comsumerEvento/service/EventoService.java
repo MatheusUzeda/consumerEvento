@@ -14,9 +14,8 @@ public class EventoService {
 	@Autowired
 	private EventosRepository eventosRepository;
 
-	public void salvarEvento(EventoForm dto) {
-		Evento evento = new Evento(dto);
-		System.out.println(dto.getEventType());
+	public void salvarEvento(EventoForm form) {
+		Evento evento = new Evento(form);
 		this.eventosRepository.save(evento);
 	}
 

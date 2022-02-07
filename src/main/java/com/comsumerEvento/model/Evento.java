@@ -15,13 +15,12 @@ public class Evento {
 
 	private String eventType;
 
-	private LocalDateTime eventDateTime;
-	
+	private LocalDateTime eventDateTime = LocalDateTime.now();
+
 	private String idUsuario;
 
 	public Evento(EventoForm form) {
 		this.eventType = form.getEventType();
-		this.eventDateTime = form.getEventDateTime();
 		this.idUsuario = form.getIdUsuario();
 	}
 
@@ -44,13 +43,7 @@ public class Evento {
 	public LocalDateTime getEventDateTime() {
 		return eventDateTime;
 	}
-	
 
-	public void setEventDateTime(LocalDateTime eventDateTime) {
-		this.eventDateTime = eventDateTime;
-	}
-
-	
 	public String getIdUsuario() {
 		return idUsuario;
 	}
